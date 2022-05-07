@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drop-down menu | Dynamic User Interface</title>
+    <link rel="stylesheet" href="./dropdown/style.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" defer>
+      import initDropdown from './dropdown/dropdown.js';
+      initDropdown();
+    </script>
+  </head>
+  <body>
+    <div class="drop-down">
+      <button type="button" data-target="hover-menu" data-hover="true">
+        Hover me
+      </button>
+      <nav data-menu="hover-menu">
+        <ul>
+          <li>Uno</li>
+          <li>Dos</li>
+          <li>Tres</li>
+          <li>Cuatro</li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="drop-down">
+      <button type="button" data-target="click-menu">Click me</button>
+      <nav data-menu="click-menu" data-expanded="false">
+        <ul>
+          <li>One</li>
+          <li>Two</li>
+          <li>Three</li>
+          <li>Four</li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="drop-down">
+      <button type="button" data-target="hover-menu" data-hover="false">
+        Links
+      </button>
+      <nav data-menu="hover-menu">
+        <ul>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link again</a></li>
+          <li><a href="#">Yep, you guess it, link</a></li>
+          <li><a href="#">Paragraph... jk still link</a></li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>

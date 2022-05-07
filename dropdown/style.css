@@ -1,0 +1,18 @@
+.drop-down {
+  position: relative;
+}
+
+[data-menu] {
+  position: absolute;
+  transform-origin: top;
+  transform: scaleY(0);
+  transition: transform 250ms ease-in-out;
+}
+
+[data-menu][data-expanded='false'] {
+  transform: scaleY(0);
+}
+
+[data-menu][data-expanded='true'] {
+  transform: scaleY(1);
+}
